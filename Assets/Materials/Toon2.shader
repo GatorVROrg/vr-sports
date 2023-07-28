@@ -73,6 +73,13 @@ Shader "Custom/Toon2"
 
 			float4 frag (v2f i) : SV_Target
 			{
+				float3 normal = normalize(i.worldNormal);
+				float NdotL = dot(_WorldSpaceLightPos0, normal);
+				
+				float shadow = SHADOW_ATTENUATION(i);
+				float lightIntensity = smoothstep(0, 0.01, NdotL * shadow);
+				float4 light = lightIntensity * _LightColor0;
+
 				float3 viewDir = normalize(i.viewDir);
 				float3 halfVector = normalize(_WorldSpaceLightPos0 + viewDir);
 				float NdotH = dot(normal, halfVector);
@@ -85,13 +92,6 @@ Shader "Custom/Toon2"
 				float4 rim = rimIntensity * _RimColor;
 				
 				float4 sample = tex2D(_MainTex, i.uv);
-				
-				float3 normal = normalize(i.worldNormal);
-				float NdotL = dot(_WorldSpaceLightPos0, normal);
-				
-				float shadow = SHADOW_ATTENUATION(i);
-				float lightIntensity = smoothstep(0, 0.01, NdotL * shadow);
-				float4 light = lightIntensity * _LightColor0;
 				
 
 				return _Color * sample * (_AmbientColor + light + specular + rim);

@@ -20,6 +20,6 @@ public class RotateInCircle : MonoBehaviour
     void Update()
     {
         transform.RotateAround(island.transform.position, island.transform.up, speed * Time.deltaTime);
-        transform.position = Vector3.MoveTowards(transform.position, island.transform.position, 1f);
+        transform.position = Vector3.MoveTowards(transform.position, island.transform.position, speed * Time.deltaTime);
     }
 }

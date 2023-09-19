@@ -470,7 +470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plane: {fileID: 1526187999}
   island: {fileID: 44254457}
-  speed: 10
+  speed: 0.5
 --- !u!136 &1526188001
 CapsuleCollider:
   m_ObjectHideFlags: 0

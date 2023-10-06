@@ -465,8 +465,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookSpeed: 2.5
   boostSpeed: 100
-  boostStart: 5
-  boostEnd: 10
+  boostStart: 3.5
+  boostEnd: 20
 --- !u!114 &1274498305601655802
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: -4794767471535134723}
   m_Layer: 6
   m_Name: Futbol
-  m_TagString: Untagged
+  m_TagString: Football
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -348,6 +348,18 @@ MonoBehaviour:
           type: 3}
         m_TargetAssemblyTypeName: FootballSpawner, Assembly-CSharp
         m_MethodName: SpawnNewFootball
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7056547018907368350}
+        m_TargetAssemblyTypeName: footballScript, Assembly-CSharp
+        m_MethodName: SetOwner
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -479,6 +491,8 @@ MonoBehaviour:
   boostSpeed: 100
   boostStart: 3.5
   boostEnd: 20
+  owner: {fileID: 0}
+  players: []
 --- !u!114 &1274498305601655802
 MonoBehaviour:
   m_ObjectHideFlags: 0

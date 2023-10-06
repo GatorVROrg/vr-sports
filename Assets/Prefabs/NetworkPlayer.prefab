@@ -3770,10 +3770,14 @@ MonoBehaviour:
   leftHand: {fileID: 913344413}
   rightHand: {fileID: 2087660788}
   meshToDisable:
-  - {fileID: 913344412}
-  - {fileID: 2087660787}
-  - {fileID: 1300534871}
-  - {fileID: 2627875298221760600}
+  - {fileID: 1227583940}
+  - {fileID: 1039059918}
+  - {fileID: 1048183167}
+  - {fileID: 1718142532}
+  - {fileID: 8362983514074437051}
+  - {fileID: 7496352300866701521}
+  - {fileID: 6767420703140962057}
+  - {fileID: 1577644737345388106}
 --- !u!114 &5053931406005417814
 MonoBehaviour:
   m_ObjectHideFlags: 0

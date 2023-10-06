@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.Animations;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class TargetScript : MonoBehaviour
 {
@@ -22,7 +20,7 @@ public class TargetScript : MonoBehaviour
             float distance = Vector3.Distance(this.transform.position, football.transform.position);
             if(distance <= 1)
             {
-                gameManager.Player1Score++;
+                football.GetComponent<footballScript>().owner.GetComponent<ScoreKeeper>().Score++;
                 Destroy(this.gameObject);
             }
         }

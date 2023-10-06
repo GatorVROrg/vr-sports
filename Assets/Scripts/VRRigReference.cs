@@ -11,6 +11,8 @@ public class VRRigReference : MonoBehaviour
     public Transform leftHand;
     public Transform rightHand;
 
+    public Transform body;
+
     private void Awake()
     {
         Singleton = this;

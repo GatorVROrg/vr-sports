@@ -11,6 +11,8 @@ public class NetworkPlayer : NetworkBehaviour
     public Transform leftHand;
     public Transform rightHand;
 
+    public Transform body;
+
     public Renderer[] meshToDisable;
 
     public override void OnNetworkSpawn()
@@ -40,6 +42,9 @@ public class NetworkPlayer : NetworkBehaviour
 
             leftHand.position = VRRigReference.Singleton.leftHand.position;
             leftHand.rotation = VRRigReference.Singleton.leftHand.rotation;
+
+            body.position = VRRigReference.Singleton.body.position;
+            
         }
     }
 }

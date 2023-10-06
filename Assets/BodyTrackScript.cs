@@ -21,6 +21,6 @@ public class BodyTrackScript : MonoBehaviour
         bodyTransform.position = bodyPosition;
 
         // Rotate the body only on the y-axis to match the head's rotation
-        bodyTransform.rotation = Quaternion.Euler(0, headTransform.rotation.eulerAngles.y, 0);
+    bodyTransform.rotation = Quaternion.Euler(90, headTransform.rotation.eulerAngles.y, 90);
     }
 }

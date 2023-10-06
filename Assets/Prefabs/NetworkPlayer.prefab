@@ -3815,4 +3815,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   headTransform: {fileID: 7181835340951566357}
   bodyTransform: {fileID: 6155001469989733158}
-  distanceToHead: 1
+  distanceToHead: 0.2

@@ -90,7 +90,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76541981}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.001, y: 0.001, z: -1.035}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -747,7 +747,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724670534}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.001, y: 0.001, z: -1.035}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3449,7 +3449,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2627875298221760600}
   m_LocalRotation: {x: 0.50000006, y: 0.49999994, z: -0.4999999, w: 0.5000001}
-  m_LocalPosition: {x: 0.000018610415, y: 0.028960824, z: -1.3654032}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: -4.353834, y: -6.655294, z: -2.0402422}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3770,11 +3770,10 @@ MonoBehaviour:
   leftHand: {fileID: 913344413}
   rightHand: {fileID: 2087660788}
   meshToDisable:
-  - {fileID: 0}
-  - {fileID: 1039059918}
-  - {fileID: 1227583940}
-  - {fileID: 1048183167}
-  - {fileID: 1718142532}
+  - {fileID: 913344412}
+  - {fileID: 2087660787}
+  - {fileID: 1300534871}
+  - {fileID: 2627875298221760600}
 --- !u!114 &5053931406005417814
 MonoBehaviour:
   m_ObjectHideFlags: 0

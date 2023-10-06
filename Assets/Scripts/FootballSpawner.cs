@@ -18,4 +18,11 @@ public class FootballSpawner : MonoBehaviour
         position.y += 1f;
         Instantiate(Football, position, spawner.transform.rotation);
     }
+
+    public void ActivateGravity()
+    {
+        Rigidbody footballRb = Football.GetComponent<Rigidbody>();
+        
+        footballRb.useGravity = true;
+    }
 }

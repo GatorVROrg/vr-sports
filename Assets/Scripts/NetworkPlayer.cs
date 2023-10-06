@@ -11,7 +11,7 @@ public class NetworkPlayer : NetworkBehaviour
     public Transform leftHand;
     public Transform rightHand;
 
-    public Renderer[] meshToDisable;
+    public GameObject[] meshToDisable;
 
     public override void OnNetworkSpawn()
     {
@@ -20,7 +20,7 @@ public class NetworkPlayer : NetworkBehaviour
         {
             foreach (var item in meshToDisable)
             {
-                item.enabled = false;
+                item.SetActive(false);
             }
         }
     }

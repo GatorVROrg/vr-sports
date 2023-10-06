@@ -11,7 +11,7 @@ public class TargetScript : MonoBehaviour
     public GameManager gameManager;
     void Start()
     {
-        GameObject gameManager = GameObject.Find("GameManager");
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
     void Update()
     {
@@ -23,6 +23,7 @@ public class TargetScript : MonoBehaviour
             if(distance <= 1)
             {
                 gameManager.Player1Score++;
+                Destroy(this.gameObject);
             }
         }
     }

@@ -247,7 +247,6 @@ GameObject:
   - component: {fileID: 7056547018907368350}
   - component: {fileID: 1274498305601655802}
   - component: {fileID: -4794767471535134723}
-  - component: {fileID: 6553432489299943415}
   m_Layer: 6
   m_Name: Futbol
   m_TagString: Untagged
@@ -358,10 +357,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4201897639502368175, guid: eec77b84fd9adab4fb60fb550a9526a7,
-          type: 3}
-        m_TargetAssemblyTypeName: FootballSpawner, Assembly-CSharp
-        m_MethodName: ActivateGravity
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1274498305601655802}
+        m_TargetAssemblyTypeName: Lifetime, Assembly-CSharp
+        m_MethodName: TimeToDie
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -371,12 +372,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls:
       - m_Target: {fileID: 1274498305601655802}
         m_TargetAssemblyTypeName: Lifetime, Assembly-CSharp
-        m_MethodName: TimeToDie
+        m_MethodName: ActivateGravity
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -520,18 +518,6 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
---- !u!114 &6553432489299943415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7684887594221494565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c0be61502bb534f922ebb746851216, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8239255933868251845
 GameObject:
   m_ObjectHideFlags: 0

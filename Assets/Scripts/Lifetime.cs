@@ -17,4 +17,9 @@ public class Lifetime : MonoBehaviour
     {
         timeToDie = true;
     }
+
+    public void ActivateGravity()
+    {
+        this.GetComponent<Rigidbody>().useGravity = true;
+    }
 }

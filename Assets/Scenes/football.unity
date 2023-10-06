@@ -123,12 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &61917162 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4201897639502368174, guid: eec77b84fd9adab4fb60fb550a9526a7,
-    type: 3}
-  m_PrefabInstance: {fileID: 4201897638886884252}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &106727306
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +646,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632235215}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5260682, y: 1.3592011, z: -0.057641525}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3620,7 +3614,7 @@ PrefabInstance:
     - target: {fileID: 4201897639502368168, guid: eec77b84fd9adab4fb60fb550a9526a7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.21
+      value: 1.348
       objectReference: {fileID: 0}
     - target: {fileID: 4201897639502368168, guid: eec77b84fd9adab4fb60fb550a9526a7,
         type: 3}
@@ -3667,17 +3661,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FootballSpawner
       objectReference: {fileID: 0}
-    - target: {fileID: 4201897639502368175, guid: eec77b84fd9adab4fb60fb550a9526a7,
-        type: 3}
-      propertyPath: spawner
-      value: 
-      objectReference: {fileID: 61917162}
-    - target: {fileID: 4201897639502368175, guid: eec77b84fd9adab4fb60fb550a9526a7,
-        type: 3}
-      propertyPath: Football
-      value: 
-      objectReference: {fileID: 7684887594221494565, guid: 9b24920ad39afd8478adc37c2ee080c7,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eec77b84fd9adab4fb60fb550a9526a7, type: 3}
 --- !u!1 &4331515670440548081

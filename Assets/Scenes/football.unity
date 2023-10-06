@@ -1929,7 +1929,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1777323122
 Transform:
   m_ObjectHideFlags: 0
@@ -1943,8 +1943,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6729528459346928577}
-  m_Father: {fileID: 512851208848866865}
-  m_RootOrder: 0
+  m_Father: {fileID: 8765302853859775951}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1838940842
 GameObject:
@@ -2538,7 +2538,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1777323122}
   - {fileID: 8765302853859775951}
   - {fileID: 714872718150413103}
   - {fileID: 2306816825163404054}
@@ -2623,7 +2622,7 @@ Transform:
   - {fileID: 1114815916}
   - {fileID: 6510334372561674202}
   m_Father: {fileID: 512851208848866865}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731263945885119740
 GameObject:
@@ -3138,7 +3137,7 @@ Transform:
   - {fileID: 1280528599}
   - {fileID: 8033103040929863113}
   m_Father: {fileID: 512851208848866865}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2312058891324114405
 Transform:
@@ -3431,6 +3430,7 @@ GameObject:
   - component: {fileID: 6092792081977851280}
   - component: {fileID: 6756207056124126890}
   - component: {fileID: 8765302853859775952}
+  - component: {fileID: 8765302853859775953}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5588,8 +5588,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 139600103}
+  - {fileID: 1777323122}
   m_Father: {fileID: 512851208848866865}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8765302853859775952
 MonoBehaviour:
@@ -5624,6 +5625,21 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &8765302853859775953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3387143382193215044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a34802d59c98c14fa1b3e0ccc581bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headTransform: {fileID: 139600103}
+  bodyTransform: {fileID: 1777323122}
+  distanceToHead: 1
 --- !u!4 &8784285508729159633
 Transform:
   m_ObjectHideFlags: 0
